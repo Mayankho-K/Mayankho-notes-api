@@ -1,0 +1,26 @@
+
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV PORT=8080
+
+WORKDIR /app
+
+COPY src/server.py ./server.py
+
+EXPOSE 8080
+
+USER 10001
+
+CMD ["python", "server.py"]
+
+.git
+.github
+.env
+.env.*
+__pycache__
+*.pyc
+tests
+projects
+README.md
