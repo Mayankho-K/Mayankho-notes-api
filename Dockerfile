@@ -15,12 +15,3 @@ USER 10001
 
 CMD ["python", "server.py"]
 
-.git
-.github
-.env
-.env.*
-__pycache__
-*.pyc
-tests
-projects
-README.md
